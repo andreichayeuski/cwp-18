@@ -3,7 +3,7 @@ const fs = require('fs');
 const EventEmitter = require("events");
 
 class FileLogger extends Logger{
-	constructor(file = 'def.txt', prefix = 'prefix', defaultLevel = 'LOG', dateFormat = 'dddd, MMMM YYYY, hh:mm:ss') {
+	constructor(file = 'def.txt', prefix = 'prefix', defaultLevel = 'LOG', dateFormat = 'dddd, MMMM YYYY, Do h:mm:ss a') {
 		super(prefix, defaultLevel, dateFormat);
 		if (file instanceof EventEmitter
 			&& typeof test.write === 'function'

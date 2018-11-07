@@ -2,7 +2,7 @@ const Logger = require('./logger');
 const moment = require('moment');
 
 class ConsoleLogger extends Logger{
-	constructor(prefix = 'prefix', defaultLevel = 'LOG', dateFormat = 'dddd, MMMM YYYY, hh:mm:ss') {
+	constructor(prefix = 'prefix', defaultLevel = 'LOG', dateFormat = 'dddd, MMMM YYYY, Do h:mm:ss a') {
 		super(prefix, defaultLevel, dateFormat);
 	}
 
